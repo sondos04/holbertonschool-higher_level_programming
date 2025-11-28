@@ -6,4 +6,3 @@ while i < 100:
     else:
         print("{:02d}".format(i))
     i += 1
-    
