@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
+def new_in_list(my_list, idx, element):
     for i in range(len(my_list)):
         if i < 0 or i >= len(my_list):
-            return None
+            return my_list
         if i == idx:
             new_list = my_list.copy()
-            return new_list[i]
+            new_list[i] = element
+            return new_list
