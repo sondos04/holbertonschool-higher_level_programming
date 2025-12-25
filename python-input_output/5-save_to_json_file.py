@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Defines a function that returns
- the JSON representation of an object (string)."""
+"""Defines a function that returns the JSON
+ representation of an object (string)."""
 import json
 
 
-def from_json_string(my_str):
-    """Returns the object represented by a JSON string."""
-    return json.loads(my_str)
+def save_to_json_file(my_obj, filename):
+    """Writes an Object to a text file, using a JSON representation."""
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(json.dumps(my_obj))
