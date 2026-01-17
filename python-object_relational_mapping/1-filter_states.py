@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """script that lists all states with a name starting with N (upper N) from
 the database hbtn_0e_0_usa"""
@@ -15,5 +14,4 @@ if __name__ == "__main__":
         if row[1][0] == 'N':
             print(row)
     cur.close()
-    db.close()
- 
+    db.close() 
