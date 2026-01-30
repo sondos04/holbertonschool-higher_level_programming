@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 // Print string JavaScript is amazing
 
 const myVar = 'JavaScript is amazing';
